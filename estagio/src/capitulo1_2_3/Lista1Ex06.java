@@ -7,12 +7,9 @@ public class Lista1Ex06 {
 		// notas de um aluno
 		Scanner sc = new Scanner(System.in);
 		double nota1, nota2, nota3, media;
-		int matricula = 0, quantAlunos = 0;
+		int matricula = 0;
 
 		do {
-			++quantAlunos;
-			for (int i = 0; i <= quantAlunos; i++) {
-
 				System.out.println("Informe o número da matricula");
 				matricula = sc.nextInt();
 
@@ -42,7 +39,7 @@ public class Lista1Ex06 {
 					System.out.println();
 
 				}
-			}
+			//}
 		} while (matricula != 999);
 		sc.close();
 	}

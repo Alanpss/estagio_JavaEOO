@@ -47,7 +47,7 @@ public class Lista1Ex09 {
 		if (contPraia != 0) {
 			System.out.printf("A praia mais distante é: %s", praiaDistante);
 			System.out.println();
-			System.out.printf("A %d praia(s) à mais de 10 e menos de 15 km do Hotel", contDistancia);
+			System.out.printf("Há %d praia(s) à mais de 10 e menos de 15 km do Hotel", contDistancia);
 			System.out.println();
 			System.out.printf("A distancia média das praias são: %.2f%n", distMedia);
 		}
