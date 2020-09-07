@@ -6,64 +6,85 @@ public class Lista1Ex17 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		//Variaveis
+
+		// Variaveis
 		int numero = 0, opSexo, idade, horasTrabalhadas, quantFuncionario;
-		//Contadores
-		int contFuncionarios = 0, contHomens = 0, contMulheres = 0;
-		double salarioHora, mediaSalarioMulheres, mediaSalarial, somaSalario = 0, salario;
+
+		// Contadores
+		int contHomens = 0, contMulheres = 0, contMulher30 = 0;
+		double salarioHora, mediaSalarioMulheres = 0, mediaSalarial = 0, somaSalario = 0, somaSalarioMulher = 0, somaSalarioMulher30 = 0, salario, salarioMulheres =0, mediaSalarioMulheres30 = 0, salarioMulheres30 = 0;
 		String sexo = "";
 
 		do {
-			contFuncionarios++;
-			for (int i = 0; i < contFuncionarios; i++) {
-				System.out.println("Informe o número do funcionário:");
-				numero = sc.nextInt();
+			// contFuncionarios++;
+			System.out.println("Informe o número do funcionário:");
+			numero = sc.nextInt();
 
-				if (numero == 999) {
-					break;
-				} 
-				else {
-					System.out.println("Informe o '1'para sexo maculino e '2' para Feminino:");
-					opSexo = sc.nextInt();
-					if (opSexo == 1) {
-						sexo = "Masculino";
-						contHomens++;
-					} 
-					else if (opSexo == 2) {
-						sexo = "Feminino";
-						contMulheres++;
-					} 
-					else {
-						System.out.println("Opção errada");
-					}
-
-					System.out.println("Informe a idade:");
-					idade = sc.nextInt();
-
-					System.out.println("Horas Trabalhadas:");
-					horasTrabalhadas = sc.nextInt();
-
-					System.out.println("Informe o valor do Salario Hora");
-					salarioHora = sc.nextDouble();
-
-					// calculo salario
-					salario = horasTrabalhadas * salarioHora;
-					somaSalario += salario;
-
-					// calcula quantidade funcionarios
-					quantFuncionario = contHomens + contMulheres;
-
-					// media salario funcionarios
-					mediaSalarial = salario / quantFuncionario;
-
-					System.out.printf("O número do funcionário é = %d%n o sexo = %s%n a idadede = %d%n o salario Hora é = %.2f%n e a Quantidade de horas trabalhadas é = %d%n",numero, sexo, idade, salarioHora, horasTrabalhadas);
-				}
+			if (numero == 999) {
+				break;
 			}
+			
+			System.out.println("Informe o '1'para sexo maculino e '2' para Feminino:");
+			opSexo = sc.nextInt();
+			
+			if (opSexo == 1) {
+				sexo = "Masculino";
+				contHomens++;
+			} else if (opSexo == 2) {
+				sexo = "Feminino";
+				contMulheres++;
+			} else {
+				System.out.println("Opção errada");
+			}
+
+			System.out.println("Informe a idade:");
+			idade = sc.nextInt();
+
+			System.out.println("Horas Trabalhadas:");
+			horasTrabalhadas = sc.nextInt();
+
+			System.out.println("Informe o valor do Salario Hora");
+			salarioHora = sc.nextDouble();
+			
+			//media salario mulheres
+			if(opSexo == 2) {
+				salarioMulheres = horasTrabalhadas * salarioHora;
+				somaSalarioMulher += salarioMulheres;  
+				mediaSalarioMulheres =  somaSalarioMulher / contMulheres;
+			}
+			
+			//media salario mulheres <30
+			if(opSexo == 2 && idade < 30) {
+				contMulher30++;
+				salarioMulheres30 = horasTrabalhadas * salarioHora; 
+				somaSalarioMulher30 += salarioMulheres30; 
+				mediaSalarioMulheres30 =  somaSalarioMulher30 / contMulher30;
+			}
+
+			// calculo salario todos os funcionários
+			salario = horasTrabalhadas * salarioHora;
+			somaSalario += salario;
+
+			// calcula quantidade funcionarios
+			quantFuncionario = contHomens + contMulheres; 
+			
+			// media salario todos funcionarios
+			mediaSalarial = somaSalario / quantFuncionario;
+			
+
+			System.out.printf(
+					"O número do funcionário é = %d%nO sexo = %s%nA idadede = %d%nO Salario Hora é = %.2f%nA quantidade de horas trabalhadas é = %d%n",
+					numero, sexo, idade, salarioHora, horasTrabalhadas);
+			
 		} while (numero != 999);
 
 		System.out.printf("A quantidade de homens é igual a: %d", contHomens);
 		System.out.println();
+		System.out.printf("A Media salarial das Mulheres é: %.2f", mediaSalarioMulheres);
+		System.out.println();
+		System.out.printf("A Media salarial das Mulheres com menos de 30 anos é: %.2f", mediaSalarioMulheres30);
+		System.out.println();
+		System.out.printf("A Media salarial de todos os funcionários é: %.2f", mediaSalarial);
 		sc.close();
 	}
 

@@ -18,7 +18,7 @@ public class Lista1Ex16 {
 
 			if (numero == 999) {
 				break;
-			} else {
+			}// else {
 				// Entrada de dados
 				System.out.println("Sexo: Informe '1' para masculino e '2' para Feminino");
 				opSexo = sc.nextInt();
@@ -40,7 +40,7 @@ public class Lista1Ex16 {
 				} else {
 					System.out.println("Opção errada");
 				}
-			}
+			//}
 			System.out.printf("O número da pessoa é = %d, o sexo = %s e a idadede = %d%n", numero, sexo, idade);
 		} while (numero != 999);
 
@@ -51,11 +51,12 @@ public class Lista1Ex16 {
 		System.out.println();
 		System.out.printf("A soma das idades das Mulheres é igual a: %d", (int) somaIdadeMulheres);
 		System.out.println();
+		
 		if (contMulheres > contHomens) {
 			System.out.println("Há mais Mulheres que Homens");
 		} 
 		else if (contHomens > contMulheres) {
-			System.out.println("Há mais Homens que mulheres");
+			System.out.println("Há mais Homens que Mulheres");
 		} 
 		else
 			System.out.println("Há a mesma quantidade de Homens e Mulheres");
