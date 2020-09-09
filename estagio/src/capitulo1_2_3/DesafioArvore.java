@@ -14,7 +14,7 @@ public class DesafioArvore {
 		if (base % 2 == 1) {
 			for (int linha = 1; linha <= base; linha++) {
 				for (int coluna = 1; coluna <= base; coluna++) { 
-					if (coluna == base) {
+					if (coluna == base) { 
 						for (int i = 1; i <= asteristico; i++) {
 							System.out.print("*");
 						}
