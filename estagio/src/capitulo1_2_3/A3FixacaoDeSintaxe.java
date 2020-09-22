@@ -44,7 +44,7 @@ public class A3FixacaoDeSintaxe {
 			numero1 += numero2;
 			numero2 = aux;
 		}
-
+		System.out.println("Fibonacci");
 		System.out.println();
 
 		// Novo valor
