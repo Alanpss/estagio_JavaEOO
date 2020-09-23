@@ -20,8 +20,8 @@ public class Principal {
 		motor1.descricao = "Fire 1.0";
 		c1.porta1 = porta1;
 		c1.porta2 = porta2;
-		//c1.porta3 = porta3;
-		//c1.porta4 = porta4;
+		c1.porta3 = porta3;
+		c1.porta4 = porta4;
 		c1.cambio = cambio1;
 		c1.velocidadeAtual = 30;
 		
