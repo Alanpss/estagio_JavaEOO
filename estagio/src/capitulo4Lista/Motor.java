@@ -1,5 +1,5 @@
 package capitulo4Lista;
 
-public class Motor {
+class Motor {
 	String descricao;
 }

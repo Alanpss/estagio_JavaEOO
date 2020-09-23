@@ -1,6 +1,6 @@
 package capitulo4Lista;
 
-public class Cambio {
+class Cambio {
 	static int marchaAtual;
 
 	static void mudarMarcha(int velocidadeAtual) {

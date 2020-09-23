@@ -1,6 +1,6 @@
 package capitulo4Lista;
 
-public class Porta {
+class Porta {
 	String descricao;
 	String estado;
 	
@@ -15,7 +15,7 @@ public class Porta {
 
 	void fechar() {
 		if (estado == "aberta") {
-			estado = "fechado";
+			estado = "fechada";
 			System.out.println("A porta foi fechada");
 		} else {
 			System.out.println("A Porta já está fechada");

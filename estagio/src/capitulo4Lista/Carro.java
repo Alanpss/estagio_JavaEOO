@@ -1,6 +1,6 @@
 package capitulo4Lista;
 
-public class Carro {
+class Carro {
 	int ano;
 	Porta porta1;
 	Porta porta2;
@@ -12,7 +12,7 @@ public class Carro {
 	Cambio cambio;
 	int velocidadeAtual = 10;
 
-	// deve trocar a marcha se for necessário e mudar a velocidade atual
+	// troca a marcha se for necessário e mudar a velocidade atual
 	void acelerar(int velocidadeAdicional) {
 		velocidadeAtual += velocidadeAdicional;
 		System.out.printf("Acelerado %d Km/h!%n", velocidadeAdicional);
@@ -25,18 +25,42 @@ public class Carro {
 		caracteristicas += "\nAno: " + this.ano;
 		caracteristicas += "\nMarca: " + this.marca;
 		caracteristicas += "\nModelo: " + this.modelo;
+		caracteristicas += "\nQuantidade portas: " + this.contPortas();
 		return caracteristicas;
 	}
 
 	// imprime a velocidade, marcha atual e o estado das portas
+
 	void exibirEstado() {
 		Cambio.mudarMarcha(velocidadeAtual);
-		System.out.printf("Velocidade atual = %d%n", velocidadeAtual);
-		System.out.printf("Marcha Atual = %d%n", cambio.marchaAtual);
-		System.out.printf("Estado da porta 1: %s%n", porta1.estado);
-		System.out.printf("Estado da porta 2: %s%n", porta2.estado);
-		System.out.printf("Estado da porta 3: %s%n", porta3.estado);
-		System.out.printf("Estado da porta 4: %s%n", porta4.estado);
+		System.out.printf("Velocidade atual = %d%n", this.velocidadeAtual);
+		System.out.printf("Marcha Atual = %d%n", Cambio.marchaAtual);
+		
+		if (porta1 != null)
+			System.out.printf("Estado da porta 1: %s%n", this.porta1.estado);
+		if (porta2 != null)
+			System.out.printf("Estado da porta 2: %s%n", this.porta2.estado);
+		if (porta3 != null)
+			System.out.printf("Estado da porta 3: %s%n", this.porta3.estado);
+		if (porta4 != null)
+			System.out.printf("Estado da porta 4: %s%n", this.porta4.estado);
 
+	}
+
+	int contPortas() {
+		int quantPorta = 0;
+		if (porta1 != null) {
+			quantPorta++;
+		}
+		if (porta2 != null) {
+			quantPorta++;
+		}
+		if (porta3 != null) {
+			quantPorta++;
+		}
+		if (porta4 != null) {
+			quantPorta++;
+		}
+		return quantPorta;
 	}
 }
