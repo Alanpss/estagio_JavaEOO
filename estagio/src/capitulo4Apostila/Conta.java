@@ -1,4 +1,4 @@
-package capitulo4;
+package capitulo4Apostila;
 
 //Exercicio 1:
 class Conta {
