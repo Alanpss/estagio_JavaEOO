@@ -10,18 +10,18 @@ public class Lista1Ex06 {
 		int matricula = 0;
 
 		do {
-				System.out.println("Informe o número da matricula");
+				System.out.println("Informe o numero da matricula");
 				matricula = sc.nextInt();
 
 				if (matricula == 999) {
 					break;
 				} else {
 
-					System.out.println("Informe o valor da 1ª notas do aluno:");
+					System.out.println("Informe o valor da 1Âª notas do aluno:");
 					nota1 = sc.nextDouble();
-					System.out.println("Informe o valor da 2ª notas do aluno:");
+					System.out.println("Informe o valor da 2Âª notas do aluno:");
 					nota2 = sc.nextDouble();
-					System.out.println("Informe o valor da 3ª notas do aluno:");
+					System.out.println("Informe o valor da 3Âª notas do aluno:");
 					nota3 = sc.nextDouble();
 
 					media = (nota1 + nota2 + nota3) / 3;
@@ -31,7 +31,7 @@ public class Lista1Ex06 {
 					if (media > 6) {
 						System.out.println("Aprovado");
 					} else if (media >= 4 && media < 6) {
-						System.out.println("Deverá fazer a Prova Final");
+						System.out.println("Devera fazer a Prova Final");
 					} else {
 						System.out.println("Reprovado");
 					}

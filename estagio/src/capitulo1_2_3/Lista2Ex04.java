@@ -8,7 +8,7 @@ public class Lista2Ex04 {
 		Scanner sc = new Scanner(System.in);
 		int a = 0, b = 0, c = 0;
 
-		System.out.println("Digite os valores de A, B e C da equação:");
+		System.out.println("Digite os valores de A, B e C da equacao:");
 		a = sc.nextInt();
 		b = sc.nextInt();
 		c = sc.nextInt();

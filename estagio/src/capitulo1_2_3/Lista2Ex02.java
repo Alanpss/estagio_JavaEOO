@@ -9,14 +9,14 @@ public class Lista2Ex02 {
 		Scanner sc = new Scanner(System.in);
 		int result = 1, factorial = 0;
 
-		System.out.println("Digite o número que deseja saber o fatorial:");
+		System.out.println("Digite o numero que deseja saber o fatorial:");
 		int number = sc.nextInt();
 
 		for (factorial = number; factorial >= 1; --factorial) {
 			result *= factorial;
 		}
 
-		System.out.printf("O fatorial de %d é: %d %n", number, result);
+		System.out.printf("O fatorial de %d eh: %d %n", number, result);
 
 		sc.close();
 

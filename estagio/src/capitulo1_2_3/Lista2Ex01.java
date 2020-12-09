@@ -7,13 +7,13 @@ public class Lista2Ex01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Digite o número:");
+		System.out.println("Digite o nï¿½mero:");
 		int number = sc.nextInt();
 
 		if (number % 2 == 0)
-			System.out.println("O número é par");
+			System.out.println("O numero eh par");
 		else
-			System.out.println("O número é impar");
+			System.out.println("O numero eh impar");
 
 		sc.close();
 	}

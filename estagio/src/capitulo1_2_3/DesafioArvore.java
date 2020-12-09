@@ -8,7 +8,7 @@ public class DesafioArvore {
 		Scanner sc = new Scanner(System.in);
 
 		int asteristico = 1;
-		System.out.println("Digite o nomero de asteristico da base da arvore, sendo ela impar:");
+		System.out.println("Digite o nomero de asteristico da base da arvore, sendo ele impar:");
 		int base = sc.nextInt();
 
 		if (base % 2 == 1) {

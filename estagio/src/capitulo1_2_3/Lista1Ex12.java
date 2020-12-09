@@ -10,13 +10,13 @@ public class Lista1Ex12 {
 
 		System.out.println("Informe o tempo gasto na viagem");
 		double tempo = sc.nextDouble();
-		System.out.println("Informe a velocidade média:");
+		System.out.println("Informe a velocidade media:");
 		double velocidade = sc.nextDouble();
 
 		double distancia = velocidade * tempo;
 		double quantLitro = distancia / 12;
 
-		System.out.printf("A quantidade de combustível utilizada foi: %.3f", quantLitro);
+		System.out.printf("A quantidade de combustivel utilizada foi: %.3f", quantLitro);
 
 		sc.close();
 

@@ -19,7 +19,7 @@ public class Lista1Ex03 {
 		if(media > 6)
 			System.out.println("Aprovado");
 		else if(media >= 4 && media <6)
-			System.out.println("Deverá fazer a Prova Final");
+			System.out.println("Devera fazer a Prova Final");
 		else 
 			System.out.println("Reprovado");
 		

@@ -3,7 +3,7 @@ package capitulo1_2_3;
 public class A3FixacaoDeSintaxe {
 
 	public static void main(String[] args) {
-		// imprimir todos os números de 150 a 300
+		// imprimir todos os nï¿½meros de 150 a 300
 		int i = 0;
 		for (i = 150; i <= 300; i++)
 			System.out.println(i);
@@ -17,7 +17,7 @@ public class A3FixacaoDeSintaxe {
 
 		System.out.println();
 
-		// imprimir todos os multiplos de 3 até 100
+		// imprimir todos os multiplos de 3 atï¿½ 100
 		int i3 = 0;
 		for (i3 = 3; i3 < 100; i3++) {
 			if (i3 % 3 == 0)
@@ -30,12 +30,12 @@ public class A3FixacaoDeSintaxe {
 		int fatorial = 1;
 		for (int n = 1; n <= 10; n++) {
 			fatorial *= n;
-			System.out.printf("O fatorial de %d é: %d %n", n, fatorial);
+			System.out.printf("O fatorial de %d ï¿½: %d %n", n, fatorial);
 		}
 
 		System.out.println();
 
-		// Série de Fibonacci
+		// Sï¿½rie de Fibonacci
 		int numero1 = 1, numero2 = 0, i5 = 0, aux = 0;
 
 		for (i5 = 0; i5 < 15; i5++) {
@@ -49,7 +49,7 @@ public class A3FixacaoDeSintaxe {
 
 		// Novo valor
 		int x = 0, valor = 13;
-		for (x = valor; x == 1;) {
+		for (x = valor; x > 1;) {
 
 			if (x % 2 == 0) {
 				x = x / 2;
@@ -61,6 +61,16 @@ public class A3FixacaoDeSintaxe {
 				System.out.println(x);
 			}
 		}
-
+		System.out.println("");
+		
+		//ex8
+		System.out.println("Ex8:");
+		int n = 4; // nÃºmero de linhas que queremos imprimir   
+        for (int i9 = 1; i9 <= n; i9++){   
+            for (int j = 1; j <= i9; j++){   
+                System.out.print((i9*j) + " ");  
+            }
+            System.out.println("");
+        }
 	}
 }

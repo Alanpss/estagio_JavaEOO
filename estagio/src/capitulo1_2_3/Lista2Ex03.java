@@ -18,7 +18,7 @@ public class Lista2Ex03 {
 				}
 			}
 			if (contDiv == 2) {
-				System.out.printf("%d é  primo %n", i);
+				System.out.printf("%d eh  primo %n", i);
 			}
 			contDiv = 0;
 		}

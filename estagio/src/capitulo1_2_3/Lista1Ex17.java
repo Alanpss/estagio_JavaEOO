@@ -18,7 +18,7 @@ public class Lista1Ex17 {
 
 		do {
 			// contFuncionarios++;
-			System.out.println("Informe o número do funcionário:");
+			System.out.println("Informe o numero do funcionario:");
 			numero = sc.nextInt();
 
 			if (numero == 999) {
@@ -35,7 +35,7 @@ public class Lista1Ex17 {
 				sexo = "Feminino";
 				contMulheres++;
 			} else {
-				System.out.println("Opção errada");
+				System.out.println("Opcao errada");
 			}
 
 			System.out.println("Informe a idade:");
@@ -62,7 +62,7 @@ public class Lista1Ex17 {
 				mediaSalarioMulheres30 = somaSalarioMulher30 / contMulher30;
 			}
 
-			// calculo salario todos os funcionários
+			// calculo salario todos os funcionarios
 			salario = horasTrabalhadas * salarioHora;
 			somaSalario += salario;
 
@@ -73,19 +73,19 @@ public class Lista1Ex17 {
 			mediaSalarial = somaSalario / quantFuncionario;
 
 			System.out.printf(
-					"O número do funcionário é = %d%n" + "O sexo = %s%n" + "A idadede = %d%n"
-					+ "O Salario Hora é = %.2f%n" + "A quantidade de horas trabalhadas é = %d%n",
+					"O nï¿½mero do funcionario e = %d%n" + "O sexo = %s%n" + "A idadede = %d%n"
+					+ "O Salario Hora e = %.2f%n" + "A quantidade de horas trabalhadas e = %d%n",
 					numero, sexo, idade, salarioHora, horasTrabalhadas);
 
 		} while (numero != 999);
 
-		System.out.printf("A quantidade de homens é igual a: %d", contHomens);
+		System.out.printf("A quantidade de homens e igual a: %d", contHomens);
 		System.out.println();
-		System.out.printf("A Media salarial das Mulheres é: %.2f", mediaSalarioMulheres);
+		System.out.printf("A Media salarial das Mulheres eh: %.2f", mediaSalarioMulheres);
 		System.out.println();
-		System.out.printf("A Media salarial das Mulheres com menos de 30 anos é: %.2f", mediaSalarioMulheres30);
+		System.out.printf("A Media salarial das Mulheres com menos de 30 anos e: %.2f", mediaSalarioMulheres30);
 		System.out.println();
-		System.out.printf("A Media salarial de todos os funcionários é: %.2f", mediaSalarial);
+		System.out.printf("A Media salarial de todos os funcionarios eh: %.2f", mediaSalarial);
 		System.out.println();
 		sc.close();
 	}

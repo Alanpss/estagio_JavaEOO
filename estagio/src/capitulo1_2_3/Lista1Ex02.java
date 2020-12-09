@@ -17,13 +17,13 @@ public class Lista1Ex02 {
 
 		faturamentoMes = (quantVideos * 0.33) * (valorLocacao);
 		faturamentoAno = faturamentoMes * 12;
-		System.out.printf("O faturamento anual é de: R$%.2f %n", faturamentoAno);
+		System.out.printf("O faturamento anual eh de: R$%.2f %n", faturamentoAno);
 
 		faturamentoMultas = (quantVideos * 0.1) * (valorLocacao * 1.1);
-		System.out.printf("O faturamento com multas no mês é de: R$%.2f %n", faturamentoMultas);
+		System.out.printf("O faturamento com multas no mes eh de: R$%.2f %n", faturamentoMultas);
 
 		videosTotais = ((quantVideos - (quantVideos * 0.02)) + (quantVideos * 0.1));
-		System.out.printf("A quantidade de filmes no fim do ano é de: %d %n", (int) videosTotais);
+		System.out.printf("A quantidade de filmes no fim do ano eh de: %d %n", (int) videosTotais);
 
 		sc.close();
 	}

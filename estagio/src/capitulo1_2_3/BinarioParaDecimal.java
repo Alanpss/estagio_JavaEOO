@@ -6,7 +6,7 @@ public class BinarioParaDecimal {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Informe o valor em binário:");
+		System.out.println("Informe o valor em binario:");
 		String binario = sc.next();
 		
 		int potencia = 0, decimal = 0;

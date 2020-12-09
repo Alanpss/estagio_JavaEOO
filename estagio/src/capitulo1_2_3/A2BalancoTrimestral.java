@@ -12,7 +12,7 @@ public class A2BalancoTrimestral {
 		int mediaMensal = (gastosJaneiro + gastosFevereiro + gastosMarco) / 3;
 
 		System.out.println(gastosTrimestre);
-		System.out.printf("O valor da média mensal é = %d", mediaMensal);
+		System.out.printf("O valor da media mensal e = %d", mediaMensal);
 	}
 
 }

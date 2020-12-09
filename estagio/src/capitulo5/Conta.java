@@ -96,10 +96,10 @@ public class Conta {
 		return saldo;
 	}
 
-	public String recuperarDadosParaImpressão() {
+	public String recuperarDadosParaImpressao() {
 
 		String dados = "Titular: " + this.titular;
-		dados += "\nNúmero:" + this.numero;
+		dados += "\nNï¿½mero:" + this.numero;
 		dados += "\nAgencia: " + this.agencia;
 		dados += "\nSaldo: " + this.saldo;
 		dados += "\nCalculo Rendimento: " + this.getRendimento();

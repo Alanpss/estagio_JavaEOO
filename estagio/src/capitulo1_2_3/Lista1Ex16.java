@@ -13,7 +13,7 @@ public class Lista1Ex16 {
 		double somaIdadeHomens = 0, somaIdadeMulheres = 0, mediaIdadeHomens = 0;
 
 		do {
-			System.out.println("Informe o número da pessoa");
+			System.out.println("Informe o numero da pessoa");
 			numero = sc.nextInt();
 
 			if (numero == 999) {
@@ -37,25 +37,25 @@ public class Lista1Ex16 {
 				somaIdadeMulheres += idade;
 
 			} else {
-				System.out.println("Opção errada");
+				System.out.println("Opï¿½ï¿½o errada");
 			}
-			System.out.printf("O número da pessoa é = %d, o sexo = %s e a idadede = %d%n", numero, sexo, idade);
+			System.out.printf("O numero da pessoa eh = %d, o sexo = %s e a idadede = %d%n", numero, sexo, idade);
 		} while (numero != 999);
 
 		mediaIdadeHomens = somaIdadeHomens / contHomens;
 
 		// Saidas de dados
-		System.out.printf("A media de idade dos homens é de: %d anos", (int) mediaIdadeHomens);
+		System.out.printf("A media de idade dos homens ï¿½ de: %d anos", (int) mediaIdadeHomens);
 		System.out.println();
-		System.out.printf("A soma das idades das Mulheres é igual a: %d", (int) somaIdadeMulheres);
+		System.out.printf("A soma das idades das Mulheres ï¿½ igual a: %d", (int) somaIdadeMulheres);
 		System.out.println();
 
 		if (contMulheres > contHomens) {
-			System.out.println("Há mais Mulheres que Homens");
+			System.out.println("Ha mais Mulheres que Homens");
 		} else if (contHomens > contMulheres) {
-			System.out.println("Há mais Homens que Mulheres");
+			System.out.println("Ha mais Homens que Mulheres");
 		} else
-			System.out.println("Há a mesma quantidade de Homens e Mulheres");
+			System.out.println("Ha a mesma quantidade de Homens e Mulheres");
 
 		sc.close();
 	}

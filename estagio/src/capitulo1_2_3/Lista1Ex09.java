@@ -21,7 +21,7 @@ public class Lista1Ex09 {
 				break;
 			}
 
-			System.out.println("Informe a distância da praia para o Hotel em km");
+			System.out.println("Informe a distï¿½ncia da praia para o Hotel em km");
 			double distancia = sc.nextInt();
 
 			System.out.printf("A praia %s fica a %.1f KMs do hotel %n", nomePraia, distancia);
@@ -32,7 +32,7 @@ public class Lista1Ex09 {
 				contDistancia++;
 			}
 
-			// calculo distância média
+			// calculo distï¿½ncia mï¿½dia
 			contKm += distancia;
 			distMedia = contKm / quantPraia;
 
@@ -45,13 +45,14 @@ public class Lista1Ex09 {
 		} while (!nomePraia.equals(condicao));
 
 		if (contPraia != 0) {
-			System.out.printf("A praia mais distante é: %s", praiaDistante);
+			System.out.printf("A praia mais distante eh: %s", praiaDistante);
 			System.out.println();
-			System.out.printf("Há %d praia(s) à mais de 10 e menos de 15 km do Hotel", contDistancia);
+			System.out.printf("Ha %d praia(s) a mais de 10 e menos de 15 km do Hotel", contDistancia);
 			System.out.println();
-			System.out.printf("A distancia média das praias são: %.2f%n", distMedia);
+			System.out.printf("A distancia media das praias Ã© de: %.2f km%n", distMedia);
 		}
 		sc.close();
 	}
 
+	
 }

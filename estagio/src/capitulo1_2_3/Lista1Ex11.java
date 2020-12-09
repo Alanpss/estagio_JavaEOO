@@ -7,7 +7,7 @@ public class Lista1Ex11 {
 	public static void main(String[] args) {
 
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Informe o valor do Salário minimo");
+		System.out.println("Informe o valor do Salario minimo");
 		double salarioMinimo = sc.nextDouble();
 
 		System.out.println("Informe a quantidade de quilowatts usada");

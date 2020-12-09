@@ -21,7 +21,7 @@ public class ContaTeste {
 		
 		//Exercicio 3: 
 		System.out.println();
-		System.out.println(c1.recuperarDadosParaImpressão());
+		System.out.println(c1.recuperarDadosParaImpressao());
 		System.out.println();
 		
 		//Exercicio 4:
@@ -37,7 +37,7 @@ public class ContaTeste {
 			System.out.println("Iguais");
 		} else {
 			System.out.println("Diferentes");
-		}//nesse caso o retorno é diferente pois esta sendo comparado o endereço de memoria 
+		}//nesse caso o retorno ï¿½ diferente pois esta sendo comparado o endereï¿½o de memoria 
 		
 		//Exercicio 5:
 		Conta c4 = new Conta();

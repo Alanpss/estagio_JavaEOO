@@ -11,7 +11,7 @@ public class Lista1Ex15 {
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 
-		System.out.println("Informe o valor do salário");
+		System.out.println("Informe o valor do salario");
 		double salario = sc.nextDouble();
 
 		if (salario <= 600) {

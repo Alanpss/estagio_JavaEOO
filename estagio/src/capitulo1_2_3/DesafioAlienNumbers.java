@@ -15,7 +15,7 @@ public class DesafioAlienNumbers {
 
 		for (int i = 1; i <= quantCasos; i++) {
 
-			System.out.println("Informe o número alienígena:");
+			System.out.println("Informe o numero alienigena:");
 			String numeroAlienigena = sc.next();
 
 			System.out.println("Informe sua linguagem de origem:");
@@ -38,13 +38,13 @@ public class DesafioAlienNumbers {
 				valorDecimal += valorCaractere * valorPotencia;
 			}
 
-			// conversão decimal p/ linguagem alvo
+			// conversï¿½o decimal p/ linguagem alvo
 			while (valorDecimal > 0) {
 				// calculo resto e divisao valorDecimal
 				int resto = valorDecimal % baseLinguagemAlvo;
 				valorDecimal = valorDecimal / baseLinguagemAlvo;
 
-				// valor na linguagem nova (início, parada)
+				// valor na linguagem nova (inicio, parada)
 				//numeroNovo = linguagemAlvo.substring(resto, resto + 1).concat(numeroNovo);
 				numeroNovo = linguagemAlvo.charAt(resto) + (numeroNovo);//o de cima tmb funciona
 			}

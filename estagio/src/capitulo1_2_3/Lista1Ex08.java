@@ -10,7 +10,7 @@ public class Lista1Ex08 {
 
 		System.out.println("Informe o Dia:");
 		dia = sc.nextInt();
-		System.out.println("Informe o Mês:");
+		System.out.println("Informe o Mes:");
 		mes = sc.nextInt();
 		System.out.println("Informe o Ano:");
 		ano = sc.nextInt();
@@ -18,9 +18,9 @@ public class Lista1Ex08 {
 		if (dia > 0 && dia < 32 && mes > 0 && mes < 13 && ano > 0 && ((mes == 1 || mes == 3 || mes == 5 || mes == 7
 				|| mes == 8 || mes == 10 || mes == 12) || ((mes == 4 || mes == 6 || mes == 9 || mes == 11) && dia <= 30)
 				|| (mes == 2 && (dia <= 29 && ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0)) || dia <= 28))) {
-			System.out.println("Data válida");
+			System.out.println("Data valida");
 		} else {
-			System.out.println("Data inválida");
+			System.out.println("Data invalida");
 		}
 
 		sc.close();

@@ -22,16 +22,16 @@ class Conta {
 		return saldo;
 	}
 
-	String recuperarDadosParaImpressão() {
+	String recuperarDadosParaImpressao() {
 
 		String dados = "Titular: " + this.titular;
-		dados += "\nNúmero:" + this.numero;
+		dados += "\nNï¿½mero:" + this.numero;
 		dados += "\nAgencia: " + this.agencia;
 		dados += "\nSaldo: " + this.saldo;
 		// dados += "\nData de Abertura: " + this.dataAbertura;
 		// Exercicio 7:
 		// dados += "\nDia: " + this.dataAbertura.dia;
-		// dados += "\nMês: " + this.dataAbertura.mes;
+		// dados += "\nMï¿½s: " + this.dataAbertura.mes;
 		// dados += "\nAno: " + this.dataAbertura.ano;
 		dados += "\nData de abertura:" + this.dataAbertura.formatada();
 		dados += "\nCalculo Rendimento: " + this.calculaRendimento();
