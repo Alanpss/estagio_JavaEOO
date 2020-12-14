@@ -38,7 +38,7 @@ public class DesafioAlienNumbers {
 				valorDecimal += valorCaractere * valorPotencia;
 			}
 
-			// convers�o decimal p/ linguagem alvo
+			// conversao decimal p/ linguagem alvo
 			while (valorDecimal > 0) {
 				// calculo resto e divisao valorDecimal
 				int resto = valorDecimal % baseLinguagemAlvo;
