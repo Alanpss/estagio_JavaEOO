@@ -12,7 +12,7 @@ public class Principal {
 		Motor motor1 = new Motor();
 		Cambio cambio1 = new Cambio();
 
-		//alteração dos atributos
+		//alteraï¿½ï¿½o dos atributos
 		c1.marca = "Fiat";
 		c1.modelo = "Uno";
 		c1.ano = 2012;
@@ -28,7 +28,7 @@ public class Principal {
 		c1.porta1.descricao = "Frente";
 		c1.porta1.estado = "aberta";
 		
-		// chamada dos métodos
+		// chamada dos mÃ©todos
 		System.out.println("Velocidade Atual: " + c1.velocidadeAtual);
 		c1.acelerar(40);
 		System.out.println("Velocidade Nova: " + c1.velocidadeAtual);
